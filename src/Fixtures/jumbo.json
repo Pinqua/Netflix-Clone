@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "img": "/images/landingPage-tv.png",
+    "img_position": true,
+    "alt": "home-tv",
+    "title": "Enjoy on your TV.",
+    "content": "Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."
+  },
+  {
+    "id": 2,
+    "img": "/images/landingPage-mobile.png",
+    "img_position": false,
+    "alt": "home-mobile",
+    "title": "Download your shows to watch offline.",
+    "content": "Save your favourites easily and always have something to watch."
+  },
+  {
+    "id": 3,
+    "img": "/images/landingPage-imac.jpg",
+    "img_position": true,
+    "alt": "home-imac",
+    "title": "Watch everywhere.",
+    "content": "Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV."
+  }
+]

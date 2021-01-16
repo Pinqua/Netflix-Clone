@@ -1,0 +1,345 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 4%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  /* animation */
+  transition: all 0.3s;
+}
+.nav__leftSide {
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+}
+
+.nav__links {
+  margin-left: 2.2rem;
+  /*color: #e5e5e5;*/
+  color: #dddddd;
+}
+.nav__links span {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.nav__links span:hover {
+  color: white;
+}
+.nav__logo {
+  width: 100px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.nav__rightSide {
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+@-webkit-keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoomAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.nav__rightSide form {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin-right: -26px;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.nav__rightSide form > input {
+  background-color: black;
+  outline: none;
+  font-size: 0.95rem;
+  padding: 7px 40px;
+  width: 240px;
+  border-radius: 2px;
+  border: 1.6px solid white;
+  line-height: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  text-decoration: none;
+}
+.searchCross {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  bottom: 0;
+  background: transparent;
+  font-size: 1.4rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+.searchIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5px;
+  color: #e5e5e5;
+  -webkit-animation: zoomAnimation 0.6s;
+  animation: zoomAnimation 0.6s;
+  transition: all 0.5s !important;
+  font-size: 1.4rem !important;
+}
+
+.nav .showSearch {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.nav .MuiSvgIcon-root {
+  color: white;
+  font-size: 1.7rem;
+}
+.nav__rightSide .MuiSvgIcon-root {
+  margin: auto 7px;
+  cursor: pointer;
+}
+.nav__avatar {
+  width: 38px;
+  margin: 0 10px;
+  border-radius: 5px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.nav__black {
+  background-color: #141414;
+}
+.nav .dropDown__arrow {
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.4s;
+}
+
+.nav .dropdown__list {
+  position: absolute;
+  top: 54px;
+  right: 10px;
+  background-color: #141414f5;
+  box-shadow: 2px 2px 2px #0000008c, -2px 0px 2px #0000008c;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  /*border: solid 0.5px rgba(255, 255, 255, 0.15);*/
+  cursor: pointer;
+  min-width: 200px;
+  font-size: 0.84rem;
+  -webkit-animation: opacityAnimation 0.3s;
+  animation: opacityAnimation 0.3s;
+}
+
+.nav .dropdown__list li {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.nav .dropdown__list ul li:nth-child(4) {
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 10px;
+}
+.nav .dropdown__list .dropdown__options {
+  padding: 7px 10px;
+}
+.nav .dropdown__list ul li:last-child {
+  padding-bottom: 12px;
+}
+
+.nav .dropdown__list li > img {
+  margin: 0;
+  margin-right: 8px;
+  padding: 0;
+  width: 35px;
+  border-radius: 5px;
+}
+.nav .dropdown__list li:hover {
+  /*background-color: rgb(31, 31, 31);*/
+  text-decoration: underline;
+}
+.expandMore__content > .MuiSvgIcon-root {
+  display: none;
+}
+@media screen and (max-width: 950px) {
+  .expandMore__content {
+    position: relative;
+    margin-left: 15px;
+    outline: none;
+    border: none;
+  }
+  .expandMore__content > .MuiSvgIcon-root {
+    display: inline-block;
+  }
+  .nav__links {
+    position: absolute;
+    top: 54px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 2px 2px 2px #0000008c, -2px 0px 2px #0000008c;
+    font-size: 1rem;
+    background-color: #141414f5;
+    min-width: 160px;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-animation: opacityAnimation 0.3s;
+    animation: opacityAnimation 0.3s;
+  }
+
+  .nav .navMobile__links {
+    display: none;
+  }
+
+  .nav__links span {
+    border-bottom: 1px solid #1f1f1fcc;
+    padding: 10px 15px;
+    margin: 0;
+  }
+  .nav__links > span:last-child {
+    border: none;
+  }
+  .nav__links span:hover {
+    background-color: #1f1f1f;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    height: 75px;
+  }
+
+  .nav__logo {
+    width: 80px;
+  }
+  .nav .dropdown__list {
+    top: 52px;
+  }
+
+  .nav__rightSide > img,
+  .nav__rightSide > .nav__userName {
+    display: none;
+  }
+  .nav__links {
+    top: 52px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav__logo {
+    width: 70px;
+  }
+  .dropDown__arrow {
+    margin-left: 8px;
+  }
+  .nav {
+    height: 65px;
+  }
+  .nav__rightSide form > input {
+    font-size: 0.9rem;
+    width: 190px;
+    padding: 7px 32px;
+  }
+  .nav__rightSide .MuiSvgIcon-root {
+    margin: auto 0;
+  }
+  .expandMore__content {
+    margin-left: 6px;
+  }
+  .nav__links {
+    min-width: 145px;
+    font-size: 0.9rem;
+    top: 46px;
+  }
+  .nav .dropdown__list {
+    min-width: 185px;
+    font-size: 0.8rem;
+    top: 46px;
+  }
+  .nav .dropdown__list li {
+    padding: 8px 10px;
+    padding-right: 0;
+  }
+  .nav .dropdown__list li > img {
+    width: 33px;
+  }
+  .nav .hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .nav__rightSide form > input {
+    width: 175px;
+    font-size: 0.85rem;
+  }
+  .nav .MuiSvgIcon-root {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nav .MuiSvgIcon-root {
+    font-size: 1.5rem;
+  }
+  .nav__rightSide form > input {
+    width: 150px;
+    font-size: 0.8rem;
+  }
+  .nav__links {
+    top: 45px;
+  }
+  .nav .dropdown__list {
+    top: 45px;
+  }
+}

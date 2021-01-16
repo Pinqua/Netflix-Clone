@@ -1,0 +1,205 @@
+.details {
+  height: auto;
+  width: 100%;
+  color: white;
+  margin-bottom: 1.5%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.details__box {
+  display: flex;
+  min-height: 450px;
+  position: relative;
+  min-width: 320px;
+}
+
+.details__close {
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  cursor: pointer;
+}
+.details__close > .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.details__description {
+  margin-top: 1.4rem;
+  color: gray;
+}
+.details__box > .details__content {
+  /* padding: 4rem 0.8rem;*/
+  padding: 5rem 4%;
+  padding-top: 2.5rem;
+  padding-right: 0;
+  width: 600px;
+  max-width: 50%;
+  background-color: black;
+  font-size: 1rem;
+}
+.details__img {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.details__heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+.details__videoContainer {
+  height: 600px;
+  position: relative;
+}
+.trailerBox {
+  outline: none;
+  border: none;
+}
+
+.details__box > .details__content h5 {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: inherit;
+}
+.details__box > .details__content h5 span {
+  padding-right: 8px;
+}
+.details__box > .details__content h5 .details__rating {
+  color: green;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.details__resolution {
+  color: #e50914;
+  font-weight: bold;
+}
+.details__buttons {
+  display: flex;
+  margin-top: 12%;
+  align-items: center;
+}
+.details__button {
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  border: none;
+  font-weight: bold;
+  border-radius: 0.2vw;
+  padding: 0.5rem 1.6rem;
+  margin-right: 2rem;
+  background-color: #33333380;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+}
+.details__buttonGhost:hover {
+  color: #000;
+  background-color: #e6e6e6;
+}
+.details__playTrailer {
+  background-color: #e50914;
+  color: white;
+}
+.details__playTrailer:hover {
+  background-color: #f40612;
+}
+
+.details__button > .button__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1050px) {
+  .details__box {
+    min-height: 350px;
+  }
+  .details iframe,
+  .details__videoContainer {
+    height: 500px;
+  }
+  .details__box > .details__content {
+    width: 500px;
+    max-width: 60%;
+    font-size: 0.92rem;
+  }
+
+  .details__heading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .details__box {
+    min-height: 300px;
+  }
+  .details__button .MuiSvgIcon-root {
+    margin: 0;
+    font-size: inherit !important;
+  }
+  .details iframe,
+  .details__videoContainer {
+    height: 400px;
+  }
+  .details__box > .details__content {
+    padding-top: 2.25rem;
+    width: 450px;
+    max-width: 70%;
+    font-size: 0.9rem;
+  }
+  .details__heading {
+    font-size: 1.65rem;
+  }
+  .details__box > .details__content h5 {
+    margin-bottom: 10px;
+  }
+  .details__button {
+    margin-right: 20px;
+    font-size: 0.86rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .details__box > .details__content h5 span {
+    padding-right: 6px;
+  }
+  .details iframe,
+  .details__videoContainer {
+    height: 300px;
+  }
+  .details__buttons {
+    margin-top: 16%;
+  }
+  .details__button {
+    margin-right: 15px;
+    padding: 0.45rem 1.1rem;
+    font-size: 0.84rem;
+  }
+  .details__box {
+    min-height: 250px;
+  }
+  .details__box > .details__content {
+    padding: 4rem 4%;
+    padding-top: 2rem;
+    width: 300px;
+    max-width: 80%;
+    font-size: 0.8rem;
+  }
+  .details__description {
+    margin-top: 1.2rem;
+  }
+  .details__heading {
+    font-size: 1.45rem;
+  }
+
+  .details__close > .MuiSvgIcon-root {
+    font-size: 1.5rem;
+  }
+}

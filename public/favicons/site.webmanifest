@@ -1,0 +1,27 @@
+{
+    "name": "Netflix Clone",
+    "short_name": "Netflix Clone",
+    "description": "A Netflix Clone Progressive Web App build with ❤️ by Piyush Sati",
+    "icons": [
+        {
+            "src": "/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/maskable_icon.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}

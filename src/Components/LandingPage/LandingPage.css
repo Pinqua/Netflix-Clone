@@ -1,0 +1,241 @@
+.landing {
+  color: white;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  background-color: black;
+}
+.landing__main {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.85) 0,
+      rgba(0, 0, 0, 0.4) 40%,
+      rgba(0, 0, 0, 0.4) 60%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("../../Images/landingPage.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  border-bottom: 8px solid #303030;
+}
+.landing__text {
+  max-width: 800px;
+  margin: 13.5rem 0;
+}
+
+.landing__heading {
+  font-size: 3.9rem;
+  font-weight: 600;
+  margin: 0 4rem;
+  margin-bottom: 20px;
+  line-height: 4rem;
+}
+.landing__subheading {
+  font-size: 1.7rem;
+}
+
+.landing h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 20px 10px;
+}
+
+.landing__email {
+  display: flex;
+  overflow: hidden;
+  border-radius: 2px;
+}
+.landing__email > input {
+  height: 65px;
+  padding: 5px 15px;
+  flex: 1;
+  color: black;
+  outline: none;
+  border: none;
+}
+button {
+  background-color: #e50914;
+  outline: none;
+  border: none;
+  color: white;
+}
+
+.landing__email > button {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0 20px;
+}
+
+.landing__email > button:hover {
+  background-color: #f40612;
+}
+
+.landing__nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1.6rem 3%;
+}
+.landing__nav img {
+  width: 170px;
+  float: left;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.landing__nav button {
+  float: right;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 7px 15px;
+  height: auto;
+}
+.landing__nav button:hover {
+  background-color: #f40612;
+}
+
+.faq {
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+  flex-direction: column;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.faq h1 {
+  font-size: 3rem;
+  margin: 40px 15px;
+}
+
+.collapsibles {
+  text-align: left;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1050px) {
+  .landing__text {
+    max-width: 700px;
+  }
+  .landing__heading {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  .landing__email > input {
+    height: 60px;
+  }
+  .landing__nav img {
+    width: 140px;
+  }
+  .faq {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .landing__text {
+    max-width: 480px;
+  }
+  .landing__heading {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 2.9rem;
+    line-height: 3rem;
+  }
+  .landing__nav img {
+    width: 120px;
+  }
+  .landing__email {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2%;
+  }
+  .faq .landing__email {
+    padding: 0;
+  }
+  .landing__email > input {
+    min-height: 50px;
+    height: 50px;
+    width: 100%;
+    border-radius: 2px;
+  }
+  .faq .landing__email > input {
+    max-width: 480px;
+  }
+  .faq h2 {
+    max-width: 520px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+  }
+  .landing__email > button {
+    margin: 1.4rem;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 3px;
+  }
+  .landing__email > button .MuiSvgIcon-root {
+    font-size: inherit;
+  }
+  .faq {
+    max-width: none;
+    padding: 4rem;
+  }
+  .faq h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .landing__text {
+    max-width: 500px;
+    padding: 0 15px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+  }
+  .landing h2 {
+    font-size: 1.13rem;
+  }
+  .landing__email > input {
+    min-height: 46px;
+    height: 46px;
+    font-size: 0.9rem;
+  }
+  .landing__heading {
+    font-size: 1.7rem;
+    line-height: 2.1rem;
+  }
+  .landing__subheading {
+    font-size: 1.16rem;
+  }
+  .landing__nav {
+    padding: 1.4rem 1.15rem;
+  }
+
+  .landing__nav button {
+    font-size: 0.9rem;
+    padding: 4px 8px;
+  }
+  .landing__nav img {
+    width: 90px;
+  }
+  .faq {
+    padding: 2rem 0;
+  }
+  .faq h1 {
+    font-size: 1.6rem;
+  }
+  .faq .landing__email {
+    padding: 0 8%;
+  }
+}

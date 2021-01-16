@@ -1,0 +1,106 @@
+.signUp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../../../Images/landingPage.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  color: white;
+}
+.signUp .logo {
+  position: absolute;
+  top: 1.5rem;
+  left: 3%;
+  width: 170px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.signup__container {
+  max-width: 450px;
+  margin-top: 7.3rem;
+  margin-bottom: 5.3rem;
+  background-color: #000000bf;
+  border: 0.5px solid #3d3d3d80;
+  text-align: left;
+  padding: 3rem 4rem;
+  padding-bottom: 9rem;
+  border-radius: 3px;
+  width: 100%;
+}
+.signup__container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup__container form > input {
+  margin: 0.5rem 0;
+  height: 50px;
+  background-color: #303030;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+}
+.signup__container form > input:focus {
+  border-bottom: 2px solid #e87c03;
+}
+.signup__container form > button {
+  padding: 0.9rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.signup__container form > button:hover {
+  background-color: #f40612;
+}
+
+.signup__container > a {
+  color: #e50914;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.signup__container a:hover {
+  color: #f40612;
+}
+
+@media screen and (max-width: 740px) {
+  .signup__container {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 5rem 5%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+    border: none;
+  }
+  .signUp .logo {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .signup__container {
+    padding: 4.5rem 5%;
+  }
+}

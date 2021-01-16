@@ -1,0 +1,26 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.loading svg {
+  width: 120px;
+  height: 120px;
+}
+
+@media screen and (max-width: 800px) {
+  .loading svg {
+    width: 100px;
+    height: 100px;
+  }
+}

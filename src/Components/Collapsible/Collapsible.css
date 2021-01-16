@@ -1,0 +1,72 @@
+.collapsible {
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+
+.accordion {
+  background-color: #303030;
+  color: white;
+  cursor: pointer;
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-size: 1.625rem;
+  border-bottom: 2px solid #141414;
+  position: relative;
+}
+.accordion span {
+  position: absolute;
+  right: 30px;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordion span .MuiSvgIcon-root {
+  font-size: 2rem;
+}
+
+.panel {
+  font-size: 1.625rem;
+  background-color: #303030;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s;
+}
+.show {
+  max-height: 700px;
+}
+.panel > p {
+  padding: 1.2em;
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 900px) {
+  .accordion {
+    font-size: 1.2rem;
+  }
+  .accordion span .MuiSvgIcon-root {
+    font-size: 1.8rem;
+  }
+  .panel {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .accordion {
+    font-size: 1.125rem;
+  }
+  .accordion span .MuiSvgIcon-root {
+    font-size: 1.6rem;
+  }
+  .accordion span {
+    right: 20px;
+  }
+  .panel {
+    font-size: 1.125rem;
+  }
+}

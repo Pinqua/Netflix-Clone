@@ -1,0 +1,11 @@
+.home {
+  color: white;
+  padding-bottom: 5rem;
+  background-color: #141414;
+}
+.home > h2 {
+  margin: 1.5rem 35px;
+  text-transform: uppercase;
+  color: #e50914;
+  font-size: 2rem;
+}
