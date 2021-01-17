@@ -32,6 +32,7 @@
   border-radius: 4px;
   height: 120px;
   margin-right: 4px;
+  cursor: pointer;
   transition: transform 450ms;
 }
 
