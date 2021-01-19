@@ -50,13 +50,16 @@ function Banner() {
   }, [history.location.pathname]);
 
   // for preventing scroll of background while model is open
-  /*
-  if (showDetails) {
-    document.documentElement.style.overflow = "hidden";
-  } else {
-    document.documentElement.style.overflow = "auto";
-  }
-*/
+  useEffect(() => {
+    if (showDetails) {
+      document.documentElement.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "auto";
+    }
+    return () => {
+      document.documentElement.style.overflow = "auto";
+    };
+  }, [showDetails]);
 
   return (
     <>
@@ -92,10 +95,7 @@ function Banner() {
             <button
               className="banner__button play"
               onClick={() => {
-                //if (item) {
-                //window.scrollTo(80, 80);
-                //}
-                setShowDetails(!showDetails);
+                setShowDetails(true);
               }}
             >
               <span className="button__text">
