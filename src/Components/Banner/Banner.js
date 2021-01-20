@@ -5,7 +5,7 @@ import axios from "axios";
 import { requests, BASE_URL } from "../../Axios/requests";
 import "./Banner.css";
 import Details from "../Details/Details";
-import Loading from "../Loader/Loading";
+import Loading from "../Loading/Loading";
 import { ClickAwayListener } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
 import { truncate } from "../../Utils/truncate";
@@ -68,11 +68,10 @@ function Banner() {
         style={
           item
             ? {
-                backgroundImage: `
-          linear-gradient(
+                backgroundImage: `linear-gradient(
           90deg,
-          #000000,
-          #00000073),
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0.45)),
           url("${BASE_URL}${item?.backdrop_path}")`,
               }
             : {}
@@ -80,7 +79,19 @@ function Banner() {
       >
         {/* Loader */}
 
-        {loading && <Loading LoaderStyle="ThreeDots" bgColor="#141414" />}
+        {loading && (
+          <Loading
+            LoaderType="ThreeDots"
+            addStyle={{
+              backgroundColor: "#141414",
+              position: "absolute",
+              top: "0",
+              right: "0",
+              bottom: "0",
+              left: "0",
+            }}
+          />
+        )}
 
         <div className="banner__contents">
           {history.location.pathname !== "/browse/movies" && (

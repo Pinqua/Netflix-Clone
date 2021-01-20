@@ -15,7 +15,7 @@ import Home from "./Components/Home/Home";
 import { auth } from "./Config/firebase";
 import { actionType } from "./ContextApi/reducer";
 import SearchResult from "./Components/SearchResult/SearchResult";
-import Loading from "./Components/Loader/Loading";
+import Loading from "./Components/Loading/Loading";
 import PageNotFound404 from "./Components/PageNotFound404/PageNotFound404";
 
 function App() {
@@ -46,36 +46,47 @@ function App() {
   }, [dispatch]);
 
   if (loading) {
-    return <Loading />;
+    return (
+      <Loading
+        addStyle={{
+          position: "fixed",
+          top: "0",
+          right: "0",
+          bottom: "0",
+          left: "0",
+          zIndex: "99999",
+        }}
+      />
+    );
+  } else {
+    return (
+      <div className="app">
+        <Router basename={process.env.PUBLIC_URL}>
+          <Switch>
+            <Route path="/" exact>
+              {!user ? <LandingPage /> : <Home />}
+            </Route>
+            <Route path="/browse/:param" exact>
+              {!user ? <Redirect to="/signin" /> : <Home />}
+            </Route>
+            <Route path="/signin">
+              {!user ? <SignIn /> : <Redirect to="/" />}
+            </Route>
+            <Route path="/signup">
+              {!user ? <SignUp /> : <Redirect to="/" />}
+            </Route>
+            <Route path="/search/:query" exact>
+              {!user ? <Redirect to="/signin" /> : <SearchResult />}
+            </Route>
+            <Route path="*">
+              <PageNotFound404 />
+            </Route>
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
+    );
   }
-
-  return (
-    <div className="app">
-      <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route path="/" exact>
-            {!user ? <LandingPage /> : <Home />}
-          </Route>
-          <Route path="/browse/:param" exact>
-            {!user ? <Redirect to="/signin" /> : <Home />}
-          </Route>
-          <Route path="/signin">
-            {!user ? <SignIn /> : <Redirect to="/" />}
-          </Route>
-          <Route path="/signup">
-            {!user ? <SignUp /> : <Redirect to="/" />}
-          </Route>
-          <Route path="/search/:query" exact>
-            {!user ? <Redirect to="/signin" /> : <SearchResult />}
-          </Route>
-          <Route path="*">
-            <PageNotFound404 />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </div>
-  );
 }
 
 export default App;

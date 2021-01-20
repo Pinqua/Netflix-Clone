@@ -30,7 +30,9 @@ function Nav() {
     const navHandler = () => {
       if (window.scrollY > 50) {
         handleShow(true);
-      } else handleShow(false);
+      } else {
+        handleShow(false);
+      }
     };
 
     window.addEventListener("scroll", navHandler);

@@ -3,7 +3,7 @@ import "./Details.css";
 import axios from "../../Axios/axios";
 import { Add, Close, PlayArrow } from "@material-ui/icons";
 import YouTube from "react-youtube";
-import Loading from "../Loader/Loading";
+import Loading from "../Loading/Loading";
 import { API_KEY, BASE_URL } from "../../Axios/requests";
 import { truncate } from "../../Utils/truncate";
 
@@ -138,17 +138,21 @@ function Details({ itemDetails, handleClose }) {
         </div>
         <div
           className="details__img"
-          style={{
-            backgroundImage: `linear-gradient(
+          style={
+            itemDetails
+              ? {
+                  backgroundImage: `linear-gradient(
               90deg,
               rgba(0, 0, 0, 1),
               rgba(0, 0, 0, 0.4)),
               url("${BASE_URL}${
-              itemDetails?.backdrop_path
-                ? itemDetails?.backdrop_path
-                : itemDetails?.poster_path
-            }")`,
-          }}
+                    itemDetails?.backdrop_path
+                      ? itemDetails?.backdrop_path
+                      : itemDetails?.poster_path
+                  }")`,
+                }
+              : {}
+          }
         ></div>
       </div>
 
@@ -161,7 +165,18 @@ function Details({ itemDetails, handleClose }) {
       >
         {/* Loader */}
 
-        {loading && <Loading LoaderStyle="Puff" />}
+        {loading && (
+          <Loading
+            LoaderType="Puff"
+            addStyle={{
+              position: "absolute",
+              top: "0",
+              right: "0",
+              bottom: "0",
+              left: "0",
+            }}
+          />
+        )}
 
         {trailerUrl && (
           <YouTube

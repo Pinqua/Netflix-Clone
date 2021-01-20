@@ -6,7 +6,7 @@ import Nav from "../Nav/Nav";
 import Row from "../Row/Row";
 import axios from "axios";
 import ax from "../../Axios/axios";
-import Loading from "../Loader/Loading";
+import Loading from "../Loading/Loading";
 import { truncate } from "../../Utils/truncate";
 
 function SearchResult() {
@@ -22,6 +22,7 @@ function SearchResult() {
 
     //fetch data form TMDb API for given query
     async function fetchData() {
+      //just making 6 requests to TMDb for a given query
       await axios
         .all([
           ax.get(`${requests.fetchSearchResultMovies}${query}&page=1`, {
@@ -125,7 +126,19 @@ function SearchResult() {
 
   //show loader while fetching data using axios
   if (loading) {
-    return <Loading LoaderStyle="Bars" />;
+    return (
+      <Loading
+        LoaderType="Bars"
+        addStyle={{
+          position: "fixed",
+          top: "0",
+          right: "0",
+          bottom: "0",
+          left: "0",
+          zIndex: "99999",
+        }}
+      />
+    );
   }
 
   return (

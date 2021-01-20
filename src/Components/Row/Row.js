@@ -3,7 +3,7 @@ import "./Row.css";
 import ax from "../../Axios/axios";
 import axios from "axios";
 import Details from "../Details/Details";
-import Loading from "../Loader/Loading";
+import Loading from "../Loading/Loading";
 import { useRef } from "react";
 import { ClickAwayListener } from "@material-ui/core";
 import { BASE_URL } from "../../Axios/requests";
@@ -98,7 +98,19 @@ function Row({ title, fetchUrl, isLargeRow, isSearch, SearchResult }) {
   return (
     <ClickAwayListener onClickAway={closeDetails}>
       <div className="row">
-        {loading && <Loading LoaderStyle="ThreeDots" bgColor="#141414" />}
+        {loading && (
+          <Loading
+            LoaderType="ThreeDots"
+            addStyle={{
+              backgroundColor: "#141414",
+              position: "absolute",
+              top: "0",
+              right: "0",
+              bottom: "0",
+              left: "0",
+            }}
+          />
+        )}
         <h2>{title}</h2>
         <div
           className={`row__posters ${isLargeRow ? "large__posters" : ""}`}
