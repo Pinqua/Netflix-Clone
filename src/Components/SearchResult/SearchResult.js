@@ -148,12 +148,13 @@ function SearchResult() {
         <div className="searchResult noResultFound">
           <div className="suggestions">
             <div>
-              Your search for{" "}
-              <span className="search__query">" {truncate(query, 40)} "</span>{" "}
-              did not have any matches.
+              Your search for&nbsp;
+              <span className="search__query">" {truncate(query, 40)} "</span>
+              &nbsp;did not have any matches.
             </div>
             <div>Suggestions:</div>
             <ul>
+              <li>Check the connection.</li>
               <li>Try different keyword.</li>
               <li>Looking for a movie or TV show?</li>
               <li>Try using a movie, TV show title, an actor or director.</li>

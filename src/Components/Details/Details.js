@@ -57,7 +57,9 @@ function Details({ itemDetails, handleClose }) {
                   !responseTvTrailer.data?.results[0]?.key
                 ) {
                   setLoading(false);
-                  alert("Trailer not available!");
+                  alert(
+                    "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV,Movie trailer."
+                  );
                 } else {
                   setTrailerUrl(responseTvTrailer.data.results[0].key);
                   trailerBox.current.focus();
@@ -66,7 +68,9 @@ function Details({ itemDetails, handleClose }) {
               .catch(() => {
                 // No Trailer is available for item in TMDb
                 setLoading(false);
-                alert("Trailer not available!");
+                alert(
+                  "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV,Movie trailer."
+                );
               });
           });
       }
