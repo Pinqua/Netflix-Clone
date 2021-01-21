@@ -77,8 +77,6 @@ function Row({ title, fetchUrl, isLargeRow, isSearch, SearchResult }) {
         mainRef.current.focus();
       });
       mainRef.current.focus();
-
-      //.scrollTo({top:0,left:0,behavior:'smooth'})
     }
   };
 

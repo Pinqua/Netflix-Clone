@@ -35,7 +35,11 @@ function Details({ itemDetails, handleClose }) {
             `/movie/${itemDetails?.id}/videos?api_key=${API_KEY}&language=en-US`
           )
           .then((responseMovieTrailer) => {
-            if (responseMovieTrailer.data.results?.length === 0) {
+            if (
+              responseMovieTrailer.data?.results?.length === 0 ||
+              !responseMovieTrailer.data?.results[0]?.key ||
+              itemDetails?.media_type === "tv"
+            ) {
               throw new Error("Trailer not available!");
             } else {
               setTrailerUrl(responseMovieTrailer.data.results[0].key);
@@ -48,7 +52,10 @@ function Details({ itemDetails, handleClose }) {
                 `/tv/${itemDetails?.id}/videos?api_key=${API_KEY}&language=en-US`
               )
               .then((responseTvTrailer) => {
-                if (responseTvTrailer.data.results?.length === 0) {
+                if (
+                  responseTvTrailer.data?.results?.length === 0 ||
+                  !responseTvTrailer.data?.results[0]?.key
+                ) {
                   setLoading(false);
                   alert("Trailer not available!");
                 } else {
