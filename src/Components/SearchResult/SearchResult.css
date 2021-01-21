@@ -6,7 +6,9 @@
 }
 .search__query {
   word-wrap: break-word;
+  word-break: keep-all;
   color: #e50914;
+  margin: 0 3px;
 }
 
 .noResultFound {

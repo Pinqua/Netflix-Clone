@@ -98,6 +98,9 @@
   display: flex;
   align-items: center;
 }
+.details__buttons > .details__buttonGhost {
+  margin-right: 0;
+}
 .details__buttonGhost:hover {
   color: #000;
   background-color: #e6e6e6;
@@ -180,7 +183,7 @@
   .details__button {
     margin-right: 15px;
     padding: 0.45rem 1.1rem;
-    font-size: 0.84rem;
+    /*font-size: 0.84rem;*/
   }
   .details__box {
     min-height: 250px;

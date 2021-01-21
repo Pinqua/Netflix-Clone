@@ -148,9 +148,9 @@ function SearchResult() {
         <div className="searchResult noResultFound">
           <div className="suggestions">
             <div>
-              Your search for&nbsp;
+              Your search for
               <span className="search__query">" {truncate(query, 40)} "</span>
-              &nbsp;did not have any matches.
+              did not have any matches.
             </div>
             <div>Suggestions:</div>
             <ul>
