@@ -23,6 +23,10 @@
 .env.test.local
 .env.production.local
 
+.env
+debug.log
+.eslintcache
+
 
 npm-debug.log*
 yarn-debug.log*

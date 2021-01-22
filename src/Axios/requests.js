@@ -1,4 +1,4 @@
-export const API_KEY = "7d7429518ca4d798c463c23a43c52b60";
+export const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const BASE_URL = "https://image.tmdb.org/t/p/original";
 
