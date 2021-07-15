@@ -33,7 +33,7 @@ https://netflix-clone-piyush-sati.netlify.app
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Pinqua/Netflix-Clone.git
 ```
 
 Go to the project directory
