@@ -3,7 +3,7 @@
 
 # Netflix Clone
 
-Netflix like UI and functionalities.
+Netflix clone with netflix like UI and functionalities.Build using react.js and Firebase
 
 ![Logo](https://netflix-clone-piyush-sati.netlify.app/static/media/netflixLogo.4c73f69a.png)
 
