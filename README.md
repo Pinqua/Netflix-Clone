@@ -62,25 +62,25 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://github.com/Pinqua/Netflix-Clone.git
+git clone https://github.com/Pinqua/Netflix-Clone.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+cd my-project
 ```
 
 Install dependencies
 
 ```bash
-  npm install
+npm install
 ```
 
 Start the server
 
 ```bash
-  npm run start
+npm run start
 ```
 
   
