@@ -25,6 +25,7 @@ https://netflix-clone-piyush-sati.netlify.app
 - User authentication + sign in with google.
 - UI almost similar to netflix.
 - User can view movie or series info and trailer if available.
+- User can search a movie or series.
 
 
 ## Run Locally
