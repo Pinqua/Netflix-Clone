@@ -14,7 +14,7 @@ https://netflix-clone-piyush-sati.netlify.app
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/y8RH4sf/netflix-clone.png)
+![App Screenshot](https://i.ibb.co/TPnHT1H/netflix-clone.gif)
 
   
 ## Features
