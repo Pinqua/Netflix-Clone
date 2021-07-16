@@ -19,13 +19,13 @@ https://netflix-clone-piyush-sati.netlify.app
   
 ## Features
 
-- Progressive Web App (PWA).
-- Fully responsive and mobile friendly.
-- State management using context api.
-- User authentication + sign in with google.
-- UI almost similar to netflix.
-- User can view movie or series info and trailer if available.
-- User can search a movie or series.
+- Progressive Web App (PWA)
+- Fully responsive and mobile friendly
+- State management using context api
+- User authentication + sign in with google
+- UI almost similar to netflix
+- User can view movie or series info and trailer if available
+- User can search a movie or series
 
 
 ## Environment Variables
