@@ -19,7 +19,7 @@ https://netflix-clone-piyush-sati.netlify.app
   
 ## Features
 
-- Progressive Web App.
+- Progressive Web App (PWA).
 - Fully responsive and mobile friendly.
 - State management using context api.
 - User authentication + sign in with google.
