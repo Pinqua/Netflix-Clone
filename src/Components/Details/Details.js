@@ -58,7 +58,7 @@ function Details({ itemDetails, handleClose }) {
                 ) {
                   setLoading(false);
                   alert(
-                    "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV,Movie trailer."
+                    "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV, Movie trailer."
                   );
                 } else {
                   setTrailerUrl(responseTvTrailer.data.results[0].key);
@@ -69,7 +69,7 @@ function Details({ itemDetails, handleClose }) {
                 // No Trailer is available for item in TMDb
                 setLoading(false);
                 alert(
-                  "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV,Movie trailer."
+                  "Trailer not available.\nTry:\n1.Checking the connection.\n2.Playing different TV, Movie trailer."
                 );
               });
           });
