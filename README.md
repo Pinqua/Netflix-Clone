@@ -1,1 +1,96 @@
-# Netflix-Clone
+
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+
+# Netflix Clone
+
+Netflix clone with netflix like UI and functionalities build using react.js and firebase
+
+![Logo](https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg)
+
+## Demo
+
+https://netflix-clone-piyush-sati.vercel.app/
+
+
+## Screenshots
+
+![App Screenshot](https://i.ibb.co/TPnHT1H/netflix-clone.gif)
+
+  
+## Features
+
+- Progressive Web App (PWA)
+- Fully responsive and mobile friendly
+- State management using context api
+- User authentication + sign in with google
+- UI almost similar to netflix
+- User can view movie or series info and trailer if available
+- User can search a movie or series
+
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+`REACT_APP_API_KEY`
+
+`REACT_APP_FIREBASE_API_KEY`
+
+`REACT_APP_FIREBASE_AUTHDOMAIN`
+
+`REACT_APP_FIREBASE_DATABASEURL`
+
+`REACT_APP_FIREBASE_PROJECTID`
+
+`REACT_APP_FIREBASE_STORAGEBUCKET`
+
+`REACT_APP_FIREBASE_MESSAGINGSENDERID`
+
+`REACT_APP_FIREBASE_APPID`
+
+`REACT_APP_FIREBASE_MEASUREMENTID`
+
+`GENERATE_SOURCEMAP=false`
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Pinqua/Netflix-Clone.git
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+  
+## Contributing
+
+Contributions are always welcome!
+
+  
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+  
