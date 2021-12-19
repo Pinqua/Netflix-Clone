@@ -24,7 +24,7 @@ https://netflix-clone-piyush-sati.vercel.app/
 - State management using Context API
 - User authentication + sign in with Google
 - UI almost similar to Netflix
-- User can view movie or series info and trailer if available
+- User can view movie/series info and trailer if available
 - User can search a movie or series
 
 
