@@ -3,7 +3,7 @@
 
 # Netflix Clone
 
-Netflix clone with netflix like UI and functionalities built using react.js and firebase
+Netflix clone with Netflix like UI and functionalities built using React.js and Firebase
 
 ![Logo](https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg)
 
