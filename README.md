@@ -21,7 +21,7 @@ https://netflix-clone-piyush-sati.vercel.app/
 
 - Progressive Web App (PWA)
 - Fully responsive and mobile friendly
-- State management using context API
+- State management using Context API
 - User authentication + sign in with Google
 - UI almost similar to Netflix
 - User can view movie or series info and trailer if available
