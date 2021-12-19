@@ -25,7 +25,7 @@ https://netflix-clone-piyush-sati.vercel.app/
 - User authentication + sign in with Google
 - UI almost similar to Netflix
 - User can view movie/series info and trailer if available
-- User can search a movie or series
+- User can search for movies/series
 
 
 ## Environment Variables
