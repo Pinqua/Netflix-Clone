@@ -14,7 +14,7 @@ https://nc-ps.vercel.app/
 
 ## Screenshots
 
-![App Screenshot](https://i.ibb.co/ZLYpp5y/netflix-clone.gif)
+![App Screenshot](https://i.ibb.co/Gxt44yg/netflix-clone.gif)
 
   
 ## Features
