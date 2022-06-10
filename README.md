@@ -8,7 +8,7 @@ Netflix clone with Netflix like UI and functionalities built using React.js and 
 
 ## Demo
 
-https://nc-ps-1.vercel.app/
+[Live](https://nc-ps-1.vercel.app/)
 
 
 ## Screenshots
