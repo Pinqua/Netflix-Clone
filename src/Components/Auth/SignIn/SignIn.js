@@ -114,8 +114,8 @@ function SignIn() {
             bot. Learn more.
           </p>
           {/*added just to indicate that sign in with google disable for the time being because of some issues.*/}
-          <p style={{color:"red"}}>   
-            Sign in with google disabled for the time being to remove the deceptive site ahead warning from the website. Try signing up/signing in using email.
+          <p style={{color:"white",fontSize:"0.9rem"}}>   
+            <span style={{color:"#e50914"}}>Note:</span> Sign in with google disabled for the time being to remove the deceptive site ahead warning from the website. Try signing up/signing in using email.
           </p>
         </div>
       </div>
