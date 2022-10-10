@@ -104,9 +104,7 @@ function SignIn() {
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
               alt="google-logo"
-            /> 
-            //added just to indicate that sign in with google disable for the time being because of some issues.
-            &nbsp;<span style={{fontSize:'0.7rem', color:"#e50914"}}> ( It is disabled for the time being to remove the Deceptive site ahead warning from the website. Try signing up/signing in using email. )</span> 
+            />
           </h3>
           <h3>
             New to Netflix? <Link to="/signup">Sign up now.</Link>
@@ -114,6 +112,10 @@ function SignIn() {
           <p>
             This page is protected by Google reCAPTCHA to ensure you're not a
             bot. Learn more.
+          </p>
+          {/*added just to indicate that sign in with google disable for the time being because of some issues.*/}
+          <p style={{color:"red"}}>   
+            Sign in with google disabled for the time being to remove the deceptive site ahead warning from the website. Try signing up/signing in using email.
           </p>
         </div>
       </div>
