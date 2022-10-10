@@ -105,6 +105,7 @@ function SignIn() {
               src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
               alt="google-logo"
             />
+            &nbsp;<span style={{color:"#e50914"}}>( Disabled currently )</span> 
           </h3>
           <h3>
             New to Netflix? <Link to="/signup">Sign up now.</Link>
@@ -114,7 +115,7 @@ function SignIn() {
             bot. Learn more.
           </p>
           {/*added just to indicate that sign in with google disable for the time being because of some issues.*/}
-          <p style={{color:"white",fontSize:"0.9rem"}}>   
+          <p>   
             <span style={{color:"#e50914"}}>Note:</span> Sign in with google disabled for the time being to remove the deceptive site ahead warning from the website. Try signing up/signing in using email.
           </p>
         </div>
