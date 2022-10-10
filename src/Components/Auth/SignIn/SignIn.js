@@ -105,7 +105,7 @@ function SignIn() {
               src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
               alt="google-logo"
             />
-            &nbsp;<span style={{color:"#e50914"}}>( Disabled currently )</span> 
+            <span style={{color:"#e50914"}}>&nbsp; (disabled currently)</span> 
           </h3>
           <h3>
             New to Netflix? <Link to="/signup">Sign up now.</Link>
