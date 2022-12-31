@@ -29,34 +29,6 @@ Netflix clone with Netflix like UI and functionalities built using React.js and 
 - User can search for movies/series
 
 
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
-
-`REACT_APP_API_KEY`
-
-`REACT_APP_FIREBASE_API_KEY`
-
-`REACT_APP_FIREBASE_AUTHDOMAIN`
-
-`REACT_APP_FIREBASE_DATABASEURL`
-
-`REACT_APP_FIREBASE_PROJECTID`
-
-`REACT_APP_FIREBASE_STORAGEBUCKET`
-
-`REACT_APP_FIREBASE_MESSAGINGSENDERID`
-
-`REACT_APP_FIREBASE_APPID`
-
-`REACT_APP_FIREBASE_MEASUREMENTID`
-
-`GENERATE_SOURCEMAP=false`
-
 
 ## Run Locally
 
@@ -69,13 +41,41 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd Netflix-Clone
 ```
 
 Install dependencies
 
 ```bash
   npm install
+```
+
+Create a .env.local file inside project directory with fields given below.
+
+```
+  API_KEY=
+
+  ANOTHER_API_KEY=
+
+  REACT_APP_API_KEY=
+
+  REACT_APP_FIREBASE_API_KEY=
+
+  REACT_APP_FIREBASE_AUTHDOMAIN=
+
+  REACT_APP_FIREBASE_DATABASEURL=
+
+  REACT_APP_FIREBASE_PROJECTID=
+
+  REACT_APP_FIREBASE_STORAGEBUCKET=
+
+  REACT_APP_FIREBASE_MESSAGINGSENDERID=
+
+  REACT_APP_FIREBASE_APPID=
+
+  REACT_APP_FIREBASE_MEASUREMENTID=
+
+  GENERATE_SOURCEMAP=false
 ```
 
 Start the server
