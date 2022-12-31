@@ -95,3 +95,9 @@ Contributions are always welcome!
 [MIT](https://choosealicense.com/licenses/mit/)
 
   
+<br/>
+<br/>
+
+<p align="center">If you liked the repository, show your  ❤️  by starring and forking it.</p>
+  
+  
