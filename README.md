@@ -67,9 +67,9 @@ Install dependencies
 
 Create a **.env** file inside project directory with fields given below.
 
-```
+```bash
   # TMDB API
-  REACT_APP_API_KEY= #Create account in TMDB API and add TMDB API KEY here
+  REACT_APP_API_KEY=  # Create account in TMDB API and add TMDB API KEY here
 
   #FIREBASE
   REACT_APP_FIREBASE_API_KEY=
